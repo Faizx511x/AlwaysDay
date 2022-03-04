@@ -1,0 +1,12 @@
+name: AlwaysDay
+main: FaizDev\AlwaysDay\Loader
+version: 1.0.0
+author: FaizDev
+api:
+- 3.25.0
+mcpe-protocol:
+- 471
+- 475
+- 486
+website: https://github.com/Faizx511x
+description: "Plugin That Makes All Worlds Day Time."
