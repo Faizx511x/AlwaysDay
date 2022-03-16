@@ -1,9 +1,9 @@
 name: AlwaysDay
 main: FaizDev\AlwaysDay\Loader
 version: 1.0.0
-author: FaizDev
+authors: [Faizx511x, ItzToxicGG]
 api:
-- 3.25.0
+- 4.0.0
 mcpe-protocol:
 - 471
 - 475
