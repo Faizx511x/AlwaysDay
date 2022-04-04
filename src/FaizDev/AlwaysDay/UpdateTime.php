@@ -13,7 +13,7 @@ class UpdateTime extends Task {
 	public function onRun(int $currentTick) {
 		if($this->plugin->getConfig()->get("alwaysday") == true){
 			foreach($this->plugin->getServer()->getLevels() as $level){
-				$level->setTime(1000);
+				$level->setTime(Level::TIME_DAY);
 			}
 		}
 		
