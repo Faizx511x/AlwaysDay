@@ -1,6 +1,6 @@
 <?php
 
-namespace FaizDev/AlwaysDay;
+namespace FaizDev\AlwaysDay;
 
 use pocketmine\Player;
 use pocketmine\Server;
