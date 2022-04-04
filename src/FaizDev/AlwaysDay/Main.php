@@ -1,16 +1,15 @@
 <?php
 
-namespace FaizDev/AlwaysDay;
+namespace FaizDev\AlwaysDay;
 
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
 class Main extends PluginBase {
 	
-	public function onEnable(){
-		$this->getScheduler()->scheduleRepeatingTask(new UpdateTime($this), 20); 
+	public function onEnable(): void{
+	    $this->getScheduler()->scheduleRepeatingTask(new UpdateTime($this), 20); 
 	}
-	
 }
