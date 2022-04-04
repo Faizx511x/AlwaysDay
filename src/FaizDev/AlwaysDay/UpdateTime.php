@@ -4,6 +4,7 @@ namespace FaizDev\AlwaysDay;
 
  use pocketmine\scheduler\Task;
  use FaizDev\AlwaysDay\Main;
+ use pocketmine\level\Level;
 
  class UpdateTime extends Task {
 
