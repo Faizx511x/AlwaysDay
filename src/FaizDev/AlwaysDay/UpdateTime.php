@@ -2,9 +2,13 @@
 
 namespace FaizDev\AlwaysDay;
 
-use pocketmine\scheduler\Task;
+ use pocketmine\scheduler\Task;
+ use FaizDev\AlwaysDay\Main;
 
-class UpdateTime extends Task {
+ class UpdateTime extends Task {
+
+     /** @var Main $plugin */
+     public $plugin;
 
     public function __construct(Main $plugin) {
 		$this->plugin = $plugin;
