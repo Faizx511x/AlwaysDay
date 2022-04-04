@@ -16,7 +16,7 @@ class SetDayTask extends Task{
 	}
 	public function onRun(int $currentTick) : void{
 		foreach($this->plugin->getServer()->getLevels() as $level){
-			$level->setTime(1000);
+			$level->setTime(Level::TIME_DAY);
 			$level->stopTime();
 		}
 	}
