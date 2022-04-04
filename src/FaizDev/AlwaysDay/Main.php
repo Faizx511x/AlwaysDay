@@ -3,6 +3,10 @@
 namespace FaizDev\AlwaysDay;
 
 use pocketmine\Player;
+
+use pocketmine\Player; to
+use pocketmine\player\Player;
+
 use pocketmine\Server;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
