@@ -1,5 +1,5 @@
 name: AlwaysDay
-main: FaizDev\AlwaysDay\Loader
+main: FaizDev\AlwaysDay\Main
 version: 1.2.1
 authors: Faizx511x
 api:
