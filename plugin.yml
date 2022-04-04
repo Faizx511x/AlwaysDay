@@ -1,7 +1,7 @@
 name: AlwaysDay
 main: FaizDev\AlwaysDay\Main
 version: 1.2.1
-authors: Faizx511x
+authors: [Faizx511x, ItzToxicGG]
 api:
 - 4.0.0
 mcpe-protocol:
