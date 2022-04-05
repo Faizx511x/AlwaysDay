@@ -10,7 +10,7 @@ use pocketmine\utils\Config;
 class Main extends PluginBase {
 	
 	public function onEnable(): void{
-	    $this->getScheduler()->scheduleRepeatingTask(new UpdateTime($this), 20); 
+	    $this->getScheduler()->scheduleRepeatingTask(new UpdateTime($this), 40); 
 	}
 	
 }
