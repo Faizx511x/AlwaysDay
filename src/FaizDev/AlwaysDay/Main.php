@@ -7,7 +7,7 @@ namespace FaizDev\AlwaysDay;
 use pocketmine\plugin\PluginBase;
 use FaizDev\AlwaysDay\UpdateTime;
 
-class DayTime extends PluginBase
+class Main extends PluginBase
 {
 
     public function onEnable(): void
