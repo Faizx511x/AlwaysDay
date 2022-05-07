@@ -12,7 +12,7 @@ class Main extends PluginBase
 
     public function onEnable(): void
     {
-        $this->getScheduler()->scheduleRepeatingTask(new DayTimeTask(), 40);
+        $this->getScheduler()->scheduleRepeatingTask(new UpdateTime(), 40);
     }
 
 }
