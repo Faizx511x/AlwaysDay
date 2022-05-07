@@ -11,6 +11,7 @@ class Main extends PluginBase {
 	
 	public function onEnable(): void{
 	    $this->getScheduler()->scheduleRepeatingTask(new UpdateTime($this), 40); 
+            $this->saveResource("config.yml)
 	}
 	
 }
