@@ -9,7 +9,7 @@ use FaizDev\AlwaysDay\Main;
 use pocketmine\Server;
 use pocketmine\world\World;
 
-class DayTimeTask extends Task
+class UpdateTime extends Task
 {
 
     public function onRun(): void
