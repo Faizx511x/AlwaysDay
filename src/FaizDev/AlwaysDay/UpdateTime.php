@@ -17,6 +17,7 @@ namespace FaizDev\AlwaysDay;
 
 	public function onRun(): void{
 		if($this->plugin->getConfig()->get("alwaysday") == true){
+			$this->saveResource("config.yml)
 			foreach($this->plugin->getServer()->getWorldManager()->getWorlds() as $world){
 				$world->setTime(1000);
 			        $world->stopTime();
