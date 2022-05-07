@@ -1,28 +1,22 @@
 <?php
 
+declare(strict_types=1);
+
 namespace FaizDev\AlwaysDay;
 
- use pocketmine\scheduler\Task;
- use pocketmine\world\World;
- use FaizDev\AlwaysDay\Main;
+use pocketmine\scheduler\Task;
+use FaizDev\AlwaysDay\Main;
+use pocketmine\Server;
+use pocketmine\world\World;
 
- class UpdateTime extends Task {
+class DayTimeTask extends Task
+{
 
-     /** @var Main $plugin */
-    public $plugin;
+    public function onRun(): void
+    {
+        foreach(Server::getInstance()->getWorldManager()->getWorlds() as $worlds) {
+            $worlds->setTime(World::TIME_DAY);
+        }
+    }
 
-    public function __construct(Main $plugin) {
-		$this->plugin = $plugin;
-	}
-
-	public function onRun(): void{
-		if($this->plugin->getConfig()->get("alwaysday") == true){
-			$this->saveResource("config.yml)
-			foreach($this->plugin->getServer()->getWorldManager()->getWorlds() as $world){
-				$world->setTime(1000);
-			        $world->stopTime();
-			}
-		}
-		
-	}
 }
