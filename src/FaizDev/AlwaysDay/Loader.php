@@ -5,14 +5,14 @@ declare(strict_types=1);
 namespace FaizDev\AlwaysDay;
 
 use pocketmine\plugin\PluginBase;
-use FaizDev\AlwaysDay\UpdateTime;
+use FaizDev\AlwaysDay\Tasks\SetDayTask;
 
-class Main extends PluginBase
+class Loader extends PluginBase
 {
 
     public function onEnable(): void
     {
-        $this->getScheduler()->scheduleRepeatingTask(new UpdateTime(), 40);
+        $this->getScheduler()->scheduleRepeatingTask(new SetDayTask(), 40);
     }
 
 }
