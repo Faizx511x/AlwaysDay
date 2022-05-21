@@ -13,7 +13,7 @@ class Loader extends PluginBase
     public function onEnable(): void
     {
         public function setTasks(){
-        $this->getScheduler()->scheduleRepeatingTask(new SetDayTask(), 40);
+        $this->getScheduler()->scheduleRepeatingTask(new SetDayTask(), 20);
         }
     }
 }
