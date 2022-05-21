@@ -10,9 +10,12 @@ use pocketmine\scheduler\Task;
 use pocketmine\Server;
 use pocketmine\world\World;
 
-class SetDayTask extends Task
-{
-
+class SetDayTask extends Task{
+    
+    public function __construct(Loader $plugin){
+		$this->plugin = $plugin;
+	}
+    
     public function onRun(): void
     {
         foreach(Server::getInstance()->getWorldManager()->getWorlds() as $worlds) {
