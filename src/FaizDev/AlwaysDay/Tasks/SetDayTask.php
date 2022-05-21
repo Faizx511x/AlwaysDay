@@ -16,8 +16,7 @@ class SetDayTask extends Task{
 		$this->plugin = $plugin;
 	}
     
-    public function onRun(): void
-    {
+    public function onRun(int $currentTick) : void{
         foreach(Server::getInstance()->getWorldManager()->getWorlds() as $worlds) {
             $worlds->setTime(World::TIME_DAY);
         }
