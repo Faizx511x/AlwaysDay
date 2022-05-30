@@ -6,7 +6,7 @@ namespace FaizDev\AlwaysDay;
 
 use pocketmine\plugin\PluginBase;
 
-use FaizDev\AlwaysDay\Tasks\SetDayTask;
+use FaizDev\AlwaysDay\SetDayTask;
 
 class Loader extends PluginBase{
 
