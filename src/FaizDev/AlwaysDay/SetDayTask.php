@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FaizDev\AlwaysDay\Tasks;
+namespace FaizDev\AlwaysDay;
 
 use FaizDev\AlwaysDay\Loader;
 
