@@ -15,6 +15,7 @@ class SetDayTask extends Task{
     public function onRun() : void{
         foreach(Server::getInstance()->getWorldManager()->getWorlds() as $worlds) {
             $worlds->setTime(World::TIME_DAY);
+            $worlds->stopTime();
         }
     }
 }
