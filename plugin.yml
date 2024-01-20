@@ -1,7 +1,7 @@
 name: AlwaysDay
 main: FaizDev\AlwaysDay\Loader
-version: 1.2.1
+version: 1.4.0
 authors: FaizDev
-api: 4.0.0
+api: 5.0.0
 website: https://github.com/Faizx511x
 description: "Plugin That Makes All Worlds Day Time."
